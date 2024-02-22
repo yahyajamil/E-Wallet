@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+body {
+    background-color: #E5E5E5;
+    font-family: sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.wallet {
+    display: flex;
+    padding: 2rem 1.5rem;
+    width: 100%;
+}
+
+
+@media(max-width:768px){
+    .wallet {
+        display: block;
+        
+    }
+    nav {
+        width: 50%;
+    }
+
+    .container {
+        margin: 1rem 0;
+    }
+
+    
+}
+
+
+@media(max-width:450px){
+    .content {
+        width: 100%;
+    }
+
+    .card-box {
+        width: calc(100% - 20px);
+    }
+}

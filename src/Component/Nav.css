@@ -1,0 +1,39 @@
+nav {
+    height: 100%;
+}
+
+nav h2 {
+    font-size: 	1.75rem;
+    font-weight: 700;
+    color: #222;
+}
+
+nav p {
+    font-size: 	1.25rem;
+    color: #222;
+}
+
+.nav-container {
+    margin: 1rem;
+}
+
+.nav-title {
+    margin: .5rem 0;
+    font-weight: 600;
+}
+
+.nav-item {
+    padding: .45rem 1rem;
+}
+
+.nav-item .nav-links {
+    color: #222;
+    font-size: 14px;
+    transition: all .35s ease-out;
+}
+
+.nav-item .nav-links:hover {
+    color: #7d4fdf;
+}
+
+
