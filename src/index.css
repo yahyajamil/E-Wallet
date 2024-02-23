@@ -5,46 +5,37 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 a {
     text-decoration: none;
 }
+
 body {
     background-color: #E5E5E5;
     font-family: sans-serif;
     width: 100%;
-    overflow-x: hidden;
 }
 
 .wallet {
     display: flex;
+    justify-content: center;
     padding: 2rem 1.5rem;
+}
+
+.card-item {
     width: 100%;
 }
 
 
-@media(max-width:768px){
-    .wallet {
-        display: block;
-        
-    }
-    nav {
-        width: 50%;
-    }
 
-    .container {
-        margin: 1rem 0;
-    }
-
-    
-}
-
-
-@media(max-width:450px){
-    .content {
-        width: 100%;
-    }
+@media(max-width:450px){    
 
     .card-box {
         width: calc(100% - 20px);
+    }
+    
+
+    .content {
+        width: 90vw;
     }
 }

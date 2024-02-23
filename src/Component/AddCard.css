@@ -5,7 +5,7 @@
 
 .card .container .content form {
     text-align: left;
-    margin: 5rem 1rem;
+    margin: 2rem 1rem;
     display: block;
 }
 
@@ -46,12 +46,24 @@ form select {
     margin: 0 10px;
     font-weight: 600;
     cursor: pointer;
+    margin-bottom: 5px;
 }
 
-@media(max-width:768px){
 
-    form {
-        margin: 3rem 1rem !important;
+.back {
+    color: #0c4eca;
+}
+
+@media (max-width:450px){
+    .card-number span {
+        font-size: 1.5rem;
     }
 
+    .card-info-content {
+        font-size: .9rem;
+    }
+
+    .cvv-content div:first-child {
+        margin-right: 10px;
+    }
 }

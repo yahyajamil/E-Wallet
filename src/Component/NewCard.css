@@ -31,35 +31,18 @@
     background-color: rgb(255, 181, 69);
 }
 
-/* .one {
-    top: 10px;
-}
-
-.two {
-    top: 18rem;
-}
-
-.three {
-    top: 22.5rem;
-}
-
-.four {
-    top: 27rem;
-} */
 
 .ninja {
     background-color: #3a3a3a;
-
 }
 
 .chain {
     background-color: #7F50E3;
-    
+
 }
 
 .evil {
     background-color: #E0304F;
-    
 }
 
 .card-content {
@@ -77,10 +60,14 @@
 }
 
 .card-number span {
+    display: block;
     font-size: 1.75rem;
     color: rgba(0, 0, 0, 1);
     font-family: "PT Mono", monospace;
     font-weight: 500;
+    width: 100%;
+    height: 32px;
+    line-height: 32px;
 }
 
 .card-info .card-info-title {
@@ -127,9 +114,15 @@
 .content {
     position: relative;
     height: 700px;
-    width: 402px;
+    width: 25.125rem;
 }
 
 .card-box {
     position: absolute;
+    transition: top 1s ease-out;
 }
+
+.card-box.active {
+    top: 10px;
+}
+

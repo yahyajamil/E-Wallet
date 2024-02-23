@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './AddCard.css'
+import { Link } from 'react-router-dom';
 
 export default function AddCard() {
 
@@ -13,16 +14,23 @@ export default function AddCard() {
 
 
     const [type, setType] = useState("bitcoin");
-    const [cardNumber, setCardNumber]=useState('XXXX XXXX XXXX XXXX');
-    const [name, setName]=useState("FIRSTNAME LASTNAME")
-    const [thru, setThru]=useState("MM/YY")
+    const [cardNumber, setCardNumber] = useState('XXXX XXXX XXXX XXXX');
+    const [name, setName] = useState("FIRSTNAME LASTNAME")
+    const [thru, setThru] = useState("MM/YY")
 
     const cardTypeHandler = (event) => {
         setType(event.target.value);
     }
 
     const cardNumberHandler = (event) => {
-        setCardNumber(event.target.value)
+
+        let input = event.target.value.replace(/\D/g, '');
+
+        input = input.substring(0, 19);
+
+        input = input.replace(/(\d{4})(?=\d)/g, '$1 ');
+
+        setCardNumber(input)
     }
 
     const cardNameHandler = (event) => {
@@ -30,7 +38,12 @@ export default function AddCard() {
     }
 
     const cardThruHandler = (event) => {
-        setThru(event.target.value)
+        let input = event.target.value.replace(/\D/g, '');
+
+        input = input.substring(0,4)
+
+        input = input.replace(/(\d{2})(?=\d)/g, '$1/');
+        setThru(input)
     }
 
     return (
@@ -63,7 +76,7 @@ export default function AddCard() {
                     <form>
                         <div>
                             <label htmlFor="type">Card Number:</label>
-                            <input type="text" value={cardNumber} onChange={cardNumberHandler} />
+                            <input type="text" value={cardNumber} onChange={cardNumberHandler} maxLength={19} />
                         </div>
                         <div>
                             <label htmlFor="type">PalceHolder Name:</label>
@@ -89,6 +102,7 @@ export default function AddCard() {
                         </div>
                     </form>
                     <button className='black-btn'>Add Card</button>
+                    <Link to={"/"}><span className='back'>Back</span></Link>
                 </div>
             </div>
         </div>
