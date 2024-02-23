@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/E-Wallet/static/css/main.536b3eea.css",
+    "main.js": "/E-Wallet/static/js/main.dc4c45d4.js",
+    "index.html": "/E-Wallet/index.html",
+    "main.536b3eea.css.map": "/E-Wallet/static/css/main.536b3eea.css.map",
+    "main.dc4c45d4.js.map": "/E-Wallet/static/js/main.dc4c45d4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.536b3eea.css",
+    "static/js/main.dc4c45d4.js"
+  ]
+}
