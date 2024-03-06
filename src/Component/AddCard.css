@@ -1,69 +1,86 @@
 .selected-card {
-    background-color: #d6d6d6 !important;
-    position: static !important;
+  background-color: #d6d6d6 !important;
+  position: static !important;
 }
 
 .card .container .content form {
-    text-align: left;
-    margin: 2rem 1rem;
-    display: block;
+  text-align: left;
+  margin: 2rem 1rem 1.5rem;
+  display: block;
 }
 
 .card .container .content form input {
-    display: block;
-    width: 100%;
-    padding: .75rem .25rem;
-    margin: .5rem 0;
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    border-radius: 8px;
-    outline: none;
+  display: block;
+  width: 100%;
+  padding: 0.75rem 0.25rem;
+  margin: 0.5rem 0;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+  outline: none;
 }
 
 .card .container .content form input:focus {
-    border-color: #7F50E3;
+  border-color: #7f50e3;
 }
 
-
 .cvv-content {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 form select {
-    width: 100%;
-    padding: .75rem 0;
-    margin: .5rem 0;
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    border-radius: 8px;
+  width: 100%;
+  padding: 0.75rem 0;
+  margin: 0.5rem 0;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
 }
 
 .black-btn {
-    background-color: black;
-    color: #fff;
-    width: calc(100% - 20px);
-    padding: .75rem;
-    border-radius: 8px;
-    margin: 0 10px;
-    font-weight: 600;
-    cursor: pointer;
-    margin-bottom: 5px;
+  background-color: black;
+  color: #fff;
+  width: calc(100% - 20px);
+  padding: 0.75rem;
+  border-radius: 8px;
+  margin: 0 10px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 5px;
 }
-
 
 .back {
-    color: #0c4eca;
+  color: #0c4eca;
 }
 
-@media (max-width:450px){
-    .card-number span {
-        font-size: 1.5rem;
-    }
+.invalid {
+  border: 1px solid red !important;
+}
 
-    .card-info-content {
-        font-size: .9rem;
-    }
+.errorMsg {
+  color: red !important;
+  text-align: left;
+  margin: .25rem 1rem;
+}
 
-    .cvv-content div:first-child {
-        margin-right: 10px;
-    }
+.loader-content {
+    display: flex;
+    justify-content: center;
+}
+
+.ready-content {
+    height: 300px;
+}
+
+@media (max-width: 450px) {
+  .card-number span {
+    font-size: 1.5rem;
+  }
+
+  .card-info-content {
+    font-size: 0.9rem;
+  }
+
+  .cvv-content div:first-child {
+    margin-right: 10px;
+  }
 }
